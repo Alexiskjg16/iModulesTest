@@ -17,6 +17,11 @@
   padding: 1em 5em;
 }
 
+.specificNav:hover {
+  color: green;
+  
+}
+
 .specificNav {
   text-decoration: none;
   color: grey;
@@ -34,6 +39,7 @@
   width: 15%;
   height: auto;
   align-items: flex-start;
+  margin-left: -1em;
 }
 
 .sideLinks {
@@ -80,7 +86,7 @@
 .threeImages {
   display: flex;
   flex-direction: row;
-  margin: 4em 1em;
+  margin: 4em 5em;
   justify-content: center;
 }
 
@@ -93,29 +99,26 @@
 }
 
 #SupportSuccess {
-  background-color: rgb(255, 208, 0);
+  background-color: rgba(255, 224, 85, 0.795);
   color: white;
   margin-top: -2.6em;
   padding: .7em;
-  opacity: .8;
   text-transform: uppercase;
 }
 
 #UpcomingEvents{
-  background-color: red;
+  background-color: rgba(255, 0, 0,  0.795);
   color: white;
   margin-top: -2.6em;
   padding: .7em;
-  opacity: .7;
   text-transform: uppercase;
 }
 
 #alumni {
-  background-color: purple;
+  background-color: rgba(128, 0, 128,  0.795);
   color: white;
   margin-top: -2.6em;
   padding: .7em;
-  opacity: .7;
   text-transform: uppercase;
 }
 
