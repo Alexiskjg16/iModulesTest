@@ -26,33 +26,38 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-        <nav className="App-header">
-          <img src={imoduleslogo} alt="iModules Logo" className="logoTag"/>
-            <Link to="/" className="specificNav">About</Link>
-               <section>
-             <Link to="/" className="specificNav" onMouseOver={this.showMyMenu} onMouseOut={this.showMyMenu}>Solutions</Link>
-             {this.state.showMenu && <div className="dropdowncontent">
-               <button className="fakeLink">Child Page One</button>
-               <button className="fakeLink">Child Page Two</button>
-               <button className="fakeLink">Child Page Three Has A Much Longer Title</button>
-               <button className="fakeLink">Child Page Four</button>
-              </div> }
-             </section>
-              
-            <Link to="/" className="specificNav">News</Link>
-            <Link to="/" className="specificNav">Events</Link>
-            <Link to="/" className="specificNav">Contact</Link>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src={imoduleslogo} alt="iModules Logo" className="logoTag"/>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+          Solutions
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Child Page One</a>
+          <a class="dropdown-item" href="#">Child Page Two</a>
+          <a class="dropdown-item" href="#">Child Page Three Has A Much Longer Title</a>
+          <a class="dropdown-item" href="#">Child Page Four</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Events</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
         <img src={headerbackground} alt="headerimg" className="headerImg"/>
         <section className="bodyContent">
-          <menu className="sideList">
-            <Link to="/" className="sideLinks">Our Technology</Link>
-            <Link to="/" className="sideLinks">The Client Experience</Link>
-            <Link to="/" className="sideLinks">Leadership</Link>
-            <Link to="/" className="sideLinks">Partners</Link>
-            <Link to="/" className="sideLinks">Careers</Link>
-            <Link to="/" className="sideLinks">Contact Us</Link>
-          </menu>
         <section className="paragraphsBody">
           <h1 id="mainHeader">Main Header Sits Here</h1>
           <p className="LoremPart">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
@@ -66,6 +71,14 @@ class App extends Component {
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
+        <menu className="sideList">
+            <Link to="/" className="sideLinks">Our Technology</Link>
+            <Link to="/" className="sideLinks">The Client Experience</Link>
+            <Link to="/" className="sideLinks">Leadership</Link>
+            <Link to="/" className="sideLinks">Partners</Link>
+            <Link to="/" className="sideLinks">Careers</Link>
+            <Link to="/" className="sideLinks">Contact Us</Link>
+          </menu>
         </section>
         <section className="threeImages">
           <section className="fullPicture">

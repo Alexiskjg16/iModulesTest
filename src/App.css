@@ -3,26 +3,17 @@
   color: white;
 }
 
+
 .logoTag {
   height: 5em;
 }
 
-.App-header {
+.navbar-nav {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  border-top: 0.5em solid rgb(60, 60, 255);
-  text-transform: uppercase;
 }
 
-.dropdowncontent {
-  position: absolute;
-  padding-bottom: 4em;
-  z-index: 100;
-}
-
-.fakeLink {
+.dropdown-item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -42,14 +33,13 @@
   float: none;
 }
 
-.specificNav:hover {
+.nav-link:hover {
   color: rgb(1, 180, 1);
-  border-bottom: .5em solid rgb(1, 180, 1);
+  border-bottom: .4em solid rgb(1, 180, 1);
   display: inherit;
-
 }
 
-.specificNav {
+.dropdown-menu {
   text-decoration: none;
   color: grey;
   font-weight: bold;
@@ -86,7 +76,7 @@
 .bodyContent {
   display: flex;
   color: black;
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 100%;
   height: auto;
   padding: 5%;
@@ -184,9 +174,47 @@
   font-size: .5em;
 }
 
-@media (min-height: 1024px), (min-width: 768px) {
-  .App-Header {
+@media (max-width: 375px) {
+  .justForMedia {
     display: flex;
     flex-direction: column;
+    border: solid green;
   }
+
+ .bodyContent {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .sideList {
+   width: 100%;
+   background-color: rgb(194, 194, 194);
+ }
+
+ .mainPartFooter {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .threeImages {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .fullPicture {
+   width: 17em;
+ }
+
+ .headerImg {
+   width: 100%;
+ }
+
+ .donateButton {
+   display: flex;
+   justify-content: center;
+   margin-left: 4em;
+   padding: 0em 6em;
+ }
+
 }
