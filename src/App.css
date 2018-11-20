@@ -14,18 +14,49 @@
   justify-content: space-between;
   border-top: 0.5em solid rgb(60, 60, 255);
   text-transform: uppercase;
-  padding: 1em 5em;
+}
+
+.dropdowncontent {
+  position: absolute;
+  padding-bottom: 4em;
+  z-index: 100;
+}
+
+.fakeLink {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  width: 15em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  padding-left: 1em;
+  padding-right: 3em;
+  text-align: left;
+  color: white;
+  background-color:rgba(77, 76, 76, 0.9);
+  border: none;
+  text-decoration: none;
+  position: relative;
+  float: none;
 }
 
 .specificNav:hover {
-  color: green;
-  
+  color: rgb(1, 180, 1);
+  border-bottom: .5em solid rgb(1, 180, 1);
+  display: inherit;
+
 }
 
 .specificNav {
   text-decoration: none;
   color: grey;
   font-weight: bold;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 }
 
 .headerImg {
@@ -151,4 +182,11 @@
   font-family: 'Times New Roman', Times, serif;
   padding: 0.5em;
   font-size: .5em;
+}
+
+@media (min-height: 1024px), (min-width: 768px) {
+  .App-Header {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -8,6 +8,20 @@ import image3 from './Images/image3.png';
 import imoduleslogo from './Images/imodules-logo.png';
 
 class App extends Component {
+  constructor() {
+    super ();
+    this.state = {
+      showMenu: false,
+    }
+  }
+  showMyMenu =(event) => {
+    event.preventDefault();
+    
+    this.setState({
+      showMenu: !this.state.showMenu,
+    });
+  }
+
   render() {
     return (
       <Router>
@@ -15,7 +29,16 @@ class App extends Component {
         <nav className="App-header">
           <img src={imoduleslogo} alt="iModules Logo" className="logoTag"/>
             <Link to="/" className="specificNav">About</Link>
-            <Link to="/" className="specificNav">Solutions</Link>
+               <section>
+             <Link to="/" className="specificNav" onMouseOver={this.showMyMenu} onMouseOut={this.showMyMenu}>Solutions</Link>
+             {this.state.showMenu && <div className="dropdowncontent">
+               <button className="fakeLink">Child Page One</button>
+               <button className="fakeLink">Child Page Two</button>
+               <button className="fakeLink">Child Page Three Has A Much Longer Title</button>
+               <button className="fakeLink">Child Page Four</button>
+              </div> }
+             </section>
+              
             <Link to="/" className="specificNav">News</Link>
             <Link to="/" className="specificNav">Events</Link>
             <Link to="/" className="specificNav">Contact</Link>
@@ -36,7 +59,7 @@ class App extends Component {
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            <Link to="/">Link Content Example</Link></p>
+            <Link to="/"> Linked Content Example</Link></p>
           <p id="secondaryHeader">SECONDARY CONTENT HEADER</p>
           <p className="LoremPart">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
