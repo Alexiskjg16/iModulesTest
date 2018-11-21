@@ -28,7 +28,7 @@
   padding-right: 3em;
   text-align: left;
   color: white;
-  background-color:rgba(77, 76, 76, 0.9);
+  background-color:rgba(77, 76, 76, 0.8);
   border: none;
   text-decoration: none;
   position: relative;
@@ -53,8 +53,6 @@ nav.navbar {
   padding-bottom: 20px;
 }
 
-
-
 .dropdown-menu {
   text-decoration: none;
   color: grey;
@@ -62,7 +60,6 @@ nav.navbar {
   width: 15em;
   padding: 0;
   margin: 0;
-
 }
 
 #navbarDropdownMenuLink {
@@ -71,6 +68,12 @@ nav.navbar {
 }
 
 #navbarDropdownMenuLink:hover {
+  color: rgb(1, 180, 1);
+  border-bottom: .4em solid rgb(1, 180, 1);
+  font-weight: bold;
+}
+
+.nav-link:hover {
   color: rgb(1, 180, 1);
   border-bottom: .4em solid rgb(1, 180, 1);
   font-weight: bold;
@@ -240,21 +243,20 @@ nav.navbar {
   }
 
   .logoTag {
-    width: 50%;
+    width: 55%;
     height: auto;
   }
 
  .bodyContent {
    display: flex;
    flex-direction: column;
-   width: 33em;
-   margin-left: -4em;
+   width: 110%;
+   margin-left: -2em;
  }
 
  .sideList {
-   width: 100%;
+   width: 108%;
    background-color: rgb(194, 194, 194);
-   margin-left: 2em;
  }
 
  .mainPartFooter {
@@ -306,6 +308,8 @@ nav.navbar {
 
   .addressPhone {
     font-size: 1em;
+    text-align: center;
+    margin-left: 2em;
   }
 
  .baseOfTheFooter {
