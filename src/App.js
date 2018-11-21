@@ -6,6 +6,7 @@ import image1 from './Images/image1.png';
 import image2 from './Images/image2.png';
 import image3 from './Images/image3.png';
 import imoduleslogo from './Images/imodules-logo.png';
+import secondLogo from './Images/secondLogo.png';
 
 class App extends Component {
   constructor() {
@@ -26,33 +27,38 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <img src={imoduleslogo} alt="iModules Logo" className="logoTag"/>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">About</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+  <div className="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul className="navbar-nav">
+    <section className="navAcross">
+      <li className="nav-item">
+        <a className="nav-link" >About</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+      <li className="nav-item dropdown">
+        <a className="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown">
           Solutions
         </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Child Page One</a>
-          <a class="dropdown-item" href="#">Child Page Two</a>
-          <a class="dropdown-item" href="#">Child Page Three Has A Much Longer Title</a>
-          <a class="dropdown-item" href="#">Child Page Four</a>
+        <div className="dropdown-menu">
+          <a className="dropdown-item" href="#">Child Page One</a>
+          <a className="dropdown-item" href="#">Child Page Two</a>
+          <a className="dropdown-item" href="#">Child Page Three Has A Much Longer Title</a>
+          <a className="dropdown-item" href="#">Child Page Four</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">News</a>
+      <li className="nav-item">
+        <a className="nav-link">News</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Events</a>
+      <li className="nav-item">
+        <a className="nav-link">Events</a>
       </li>
-      <li>
-        <a class="nav-link" href="#">Contact</a>
+      <li className="nav-item">
+        <a className="nav-link">Contact</a>
       </li>
+    </section>
     </ul>
   </div>
 </nav>
@@ -96,15 +102,15 @@ class App extends Component {
         </section>
        <footer className="wholeFooter">
          <section className="mainPartFooter">
-         <img src={imoduleslogo} alt="iModules Logo"  className="logoTag" />
+         <img src={secondLogo} alt="iModules Logo"  className="secondLogoTag" />
           <section>
-           <h4>5101 College Blvd, Leawood, KS 66211</h4>
-           <h4>913.888.0772 - info@imodules.com</h4>
+           <h4 className="addressPhone">5101 College Blvd, Leawood, KS 66211</h4>
+           <h4 className="addressPhone">913.888.0772 - info@imodules.com</h4>
           </section>
           <button className="donateButton">Donate today</button>
           </section>
-          <section className="baseOfTheFooter">
-            <h1>Thanks for completing this test build!</h1>
+          <section>
+            <h1 className="baseOfTheFooter">Thanks for completing this test build!</h1>
           </section>
        </footer>
        </div>

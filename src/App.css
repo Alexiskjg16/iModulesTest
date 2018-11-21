@@ -1,16 +1,18 @@
 .App {
   text-align: center;
   color: white;
+  border-top: solid 0.8em rgb(59, 134, 248);
 }
-
 
 .logoTag {
   height: 5em;
 }
 
-.navbar-nav {
+.navAcross {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: space-between;
+  margin-left: 4em;
 }
 
 .dropdown-item {
@@ -31,22 +33,47 @@
   text-decoration: none;
   position: relative;
   float: none;
+  white-space: normal;
 }
 
-.nav-link:hover {
-  color: rgb(1, 180, 1);
-  border-bottom: .4em solid rgb(1, 180, 1);
-  display: inherit;
+nav.navbar {
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
 }
+
+.nav-item {  
+  margin-left: 6em;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+
 
 .dropdown-menu {
   text-decoration: none;
   color: grey;
   font-weight: bold;
-  padding-bottom: 2em;
-  padding-top: 2em;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+  width: 15em;
+  padding: 0;
+  margin: 0;
+
+}
+
+#navbarDropdownMenuLink {
+  border-bottom: .4em solid transparent;
+  cursor: pointer;
+}
+
+#navbarDropdownMenuLink:hover {
+  color: rgb(1, 180, 1);
+  border-bottom: .4em solid rgb(1, 180, 1);
+  font-weight: bold;
 }
 
 .headerImg {
@@ -66,7 +93,7 @@
 .sideLinks {
   border-bottom: .1em solid grey;
   text-decoration: none;
-  color: blue;
+  color: rgb(45, 124, 243);
   font-size: 0.8em;
   padding: .8em;
   width: 100%;
@@ -99,7 +126,7 @@
 }
 
 #secondaryHeader {
-  color: blue;
+  color: rgb(45, 124, 243);
   font-weight: none;
   font-size: 1.5em;
 }
@@ -116,35 +143,44 @@
   flex-direction: column;
   color: black;
   padding: 0em 1em;
-  width: 30%;
+  width: 35%;
 }
 
 #SupportSuccess {
   background-color: rgba(255, 224, 85, 0.795);
+  font-size: 1.5em;
   color: white;
   margin-top: -2.6em;
-  padding: .7em;
+  padding: .7em 0em;
   text-transform: uppercase;
 }
 
 #UpcomingEvents{
   background-color: rgba(255, 0, 0,  0.795);
   color: white;
+  font-size: 1.5em;
   margin-top: -2.6em;
-  padding: .7em;
+  padding: .7em 0em;
   text-transform: uppercase;
 }
 
 #alumni {
   background-color: rgba(128, 0, 128,  0.795);
   color: white;
+  font-size: 1.5em;
   margin-top: -2.6em;
   padding: .7em;
   text-transform: uppercase;
 }
 
 .wholeFooter {
-  background-color:grey;
+  background-color:#343530;
+}
+
+.secondLogoTag {
+  width: 20%;
+  height: 20%;
+  margin-left: 5em;
 }
 
 .mainPartFooter {
@@ -152,6 +188,12 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 2em;
+}
+
+.addressPhone {
+  font-size: 1em;
+  margin-left: -25em;
+  margin-top: 1em;
 }
 
 .donateButton {
@@ -162,59 +204,113 @@
   font-weight: bold;
   font-size:1em;
   width: 20%;
-  height: 5em;
+  height: 4em;
+  margin-right: 4em;
+  margin-top: 1em;
 }
 
 .baseOfTheFooter {
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(29, 29, 29);
   width: 100%;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
-  padding: 0.5em;
-  font-size: .5em;
+  font-size: 1.3em;
+  padding: 1em;
+  margin-bottom:-.5em;
+
 }
 
 @media (max-width: 375px) {
+
+  .navAcross {
+    display: flex;
+    flex-direction: column;
+    margin-left: -3.5em;
+  }
+
+  .navbar-toggler {
+    display: flex;
+    flex-direction: row;
+  }
+
   .justForMedia {
     display: flex;
     flex-direction: column;
     border: solid green;
   }
 
+  .logoTag {
+    width: 50%;
+    height: auto;
+  }
+
  .bodyContent {
    display: flex;
    flex-direction: column;
+   width: 33em;
+   margin-left: -4em;
  }
 
  .sideList {
    width: 100%;
    background-color: rgb(194, 194, 194);
+   margin-left: 2em;
  }
 
  .mainPartFooter {
    display: flex;
    flex-direction: column;
-   justify-content: center;
  }
 
  .threeImages {
    display: flex;
    flex-direction: column;
+   margin-top: -2em;
  }
 
  .fullPicture {
-   width: 17em;
+   width: 24em;
+   margin-left: -5.5em;
+   margin-top: 1em;
  }
 
  .headerImg {
    width: 100%;
  }
 
+ .wholeFooter {
+   display: flex;
+   align-self: center;
+   flex-direction: column;
+ }
+
  .donateButton {
    display: flex;
    justify-content: center;
-   margin-left: 4em;
-   padding: 0em 6em;
+   flex-wrap: nowrap;
+   margin-left: 3em;
+   margin-top:1em;
+   width: 14em;
+   height: 3em;
+ }
+ 
+  .secondLogoTag {
+    display:flex;
+    justify-content: center;
+    width: 50%;
+    color: white;
+    height: auto;
+    margin-left: 4.5em;
+    margin-bottom: 1em;
+  }
+
+  .addressPhone {
+    font-size: 1em;
+  }
+
+ .baseOfTheFooter {
+   font-size: .5em;
+   margin-bottom: -2em;
  }
 
 }
