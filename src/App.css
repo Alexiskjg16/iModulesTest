@@ -149,6 +149,10 @@ nav.navbar {
   width: 35%;
 }
 
+.adjustHeightOnly {
+  height: 20em;
+}
+
 #SupportSuccess {
   background-color: rgba(255, 224, 85, 0.795);
   font-size: 1.5em;

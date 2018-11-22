@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import headerbackground from './Images/headerbackground.png';
-import image1 from './Images/image1.png';
-import image2 from './Images/image2.png';
-import image3 from './Images/image3.png';
+import headerbackground from './Images/background.jpeg';
+import image1 from './Images/taketwoone.jpg';
+import image2 from './Images/taketwotwo.jpg';
+import image3 from './Images/taketwothree.jpg';
 import imoduleslogo from './Images/imodules-logo.png';
 import secondLogo from './Images/secondLogo.png';
 
@@ -88,15 +88,15 @@ class App extends Component {
         </section>
         <section className="threeImages">
           <section className="fullPicture">
-          <img src={image1} alt="support student success"/>
+          <img src={image1} alt="support student success" className="adjustHeightOnly"/>
           <h3 id="SupportSuccess">Support Student Success</h3>
           </section>
           <section className="fullPicture">
-          <img src={image2} alt="upcoming campus events" />
+          <img src={image2} alt="upcoming campus events" className="adjustHeightOnly"/>
           <h3 id="UpcomingEvents">Upcoming Campus Events</h3>
           </section>
           <section className="fullPicture">
-          <img src={image3} alt="read alumni stories" />
+          <img src={image3} alt="read alumni stories" className="adjustHeightOnly"/>
           <h3 id="alumni">Read Alumni Stories</h3>
           </section>
         </section>
