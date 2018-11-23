@@ -227,6 +227,25 @@ nav.navbar {
 
 }
 
+@media (max-width: 768px) {
+.donateButton {
+  margin-top: 8em;
+  margin-left: -45em;
+}
+
+.adjustHeightOnly {
+  height: 15em;
+}
+
+.fullPicture {
+  width: 13em;
+}
+
+.sideList {
+  margin-left: -10em;
+}
+}
+
 @media (max-width: 375px) {
 
   .navAcross {

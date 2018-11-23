@@ -29,34 +29,34 @@ class App extends Component {
         <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <img src={imoduleslogo} alt="iModules Logo" className="logoTag"/>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
           <span className="navbar-toggler-icon"></span>
         </button>
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav">
     <section className="navAcross">
       <li className="nav-item">
-        <a className="nav-link" >About</a>
+        <Link to="/" className="nav-link" >About</Link>
       </li>
       <li className="nav-item dropdown">
-        <a className="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown">
+        <Link to="/" className="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown">
           Solutions
-        </a>
+        </Link>
         <div className="dropdown-menu">
-          <a className="dropdown-item" href="#">Child Page One</a>
-          <a className="dropdown-item" href="#">Child Page Two</a>
-          <a className="dropdown-item" href="#">Child Page Three Has A Much Longer Title</a>
-          <a className="dropdown-item" href="#">Child Page Four</a>
+          <Link to="/" className="dropdown-item" href="#">Child Page One</Link>
+          <Link to="/" className="dropdown-item" href="#">Child Page Two</Link>
+          <Link to="/" className="dropdown-item" href="#">Child Page Three Has A Much Longer Title</Link>
+          <Link to="/" className="dropdown-item" href="#">Child Page Four</Link>
         </div>
       </li>
       <li className="nav-item">
-        <a className="nav-link">News</a>
+        <Link to="/" className="nav-link">News</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link">Events</a>
+        <Link to="/" className="nav-link">Events</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link">Contact</a>
+        <Link to="/" className="nav-link">Contact</Link>
       </li>
     </section>
     </ul>
