@@ -228,22 +228,42 @@ nav.navbar {
 }
 
 @media (max-width: 768px) {
-.donateButton {
-  margin-top: 8em;
-  margin-left: -45em;
-}
+
+  .mainPartFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donateButton {
+    margin-left: 2.5em;
+  }
+
+  .secondLogoTag {
+   margin-left: -1em;
+    width: 10em;
+  }
+
+  .addressPhone {
+    margin-left: 2em;
+  }
 
 .adjustHeightOnly {
-  height: 15em;
+  height: 13em;
 }
 
 .fullPicture {
-  width: 13em;
+  width: 15em;
 }
 
-.sideList {
-  margin-left: -10em;
+#SupportSuccess {
+  font-size: 1.3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: -3em;
+  background-color: rgba(255, 224, 85, .95)
 }
+
 }
 
 @media (max-width: 375px) {
