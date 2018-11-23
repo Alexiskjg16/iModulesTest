@@ -222,13 +222,18 @@ nav.navbar {
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.3em;
-  padding: 1em;
+  padding: .5em;
   margin-bottom:-.5em;
 
 }
 
 @media (max-width: 768px) {
 
+
+  .navbar-toggler {
+    margin-bottom: .5em;
+    margin-top: .5em;
+  }
   .mainPartFooter {
     display: flex;
     flex-direction: column;
@@ -243,7 +248,6 @@ nav.navbar {
   .secondLogoTag {
    margin-left: -1em;
     width: 10em;
-
   }
 
   .addressPhone {
@@ -251,25 +255,29 @@ nav.navbar {
     margin-top: 2em;
   }
 
-.adjustHeightOnly {
-  height: 13em;
+  .adjustHeightOnly {
+    height: 13em;
+  }
+
+  .fullPicture {
+    width: 15em;
+  }
+
+  .sideList {
+    width: 50%;
+  }
+
+  #SupportSuccess {
+   font-size: 1.3em;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   margin-top: -3em;
+   background-color: rgba(255, 224, 85, .95)
+  }
+
 }
 
-.fullPicture {
-  width: 15em;
-}
-
-#SupportSuccess {
-  font-size: 1.3em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-top: -3em;
-  background-color: rgba(255, 224, 85, .95)
-}
-
-}
-
-@media (max-width: 375px) {
+@media (min-width: 375px) {
 
   .navAcross {
     display: flex;
