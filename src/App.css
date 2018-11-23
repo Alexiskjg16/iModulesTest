@@ -157,7 +157,7 @@ nav.navbar {
   background-color: rgba(255, 224, 85, 0.795);
   font-size: 1.5em;
   color: white;
-  margin-top: -2.6em;
+  margin-top: -2.5em;
   padding: .7em 0em;
   text-transform: uppercase;
 }
@@ -185,22 +185,22 @@ nav.navbar {
 }
 
 .secondLogoTag {
-  width: 20%;
-  height: 20%;
-  margin-left: 5em;
+  width: 30%;
+  height: 60%;
+  margin-left: -25em;
+  margin-top: 1.5em;
 }
 
 .mainPartFooter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2em;
 }
 
 .addressPhone {
   font-size: 1em;
-  margin-left: -25em;
-  margin-top: 1em;
+  margin-left: 30em;
+  margin-top: -4em;
 }
 
 .donateButton {
@@ -213,7 +213,7 @@ nav.navbar {
   width: 20%;
   height: 4em;
   margin-right: 4em;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .baseOfTheFooter {
@@ -237,15 +237,18 @@ nav.navbar {
 
   .donateButton {
     margin-left: 2.5em;
+    margin-bottom: .5em;
   }
 
   .secondLogoTag {
    margin-left: -1em;
     width: 10em;
+
   }
 
   .addressPhone {
     margin-left: 2em;
+    margin-top: 2em;
   }
 
 .adjustHeightOnly {
@@ -314,8 +317,8 @@ nav.navbar {
  }
 
  .fullPicture {
-   width: 24em;
-   margin-left: -5.5em;
+   width: 20em;
+   margin-left: -3.5em;
    margin-top: 1em;
  }
 
@@ -352,7 +355,7 @@ nav.navbar {
   .addressPhone {
     font-size: 1em;
     text-align: center;
-    margin-left: 2em;
+    margin-left: 1em;
   }
 
  .baseOfTheFooter {

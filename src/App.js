@@ -104,9 +104,9 @@ class App extends Component {
          <section className="mainPartFooter">
          <section>
          <img src={secondLogo} alt="iModules Logo"  className="secondLogoTag" />
-          <section>
-           <h4 className="addressPhone">5101 College Blvd, Leawood, KS 66211</h4>
-           <h4 className="addressPhone">913.888.0772 - info@imodules.com</h4>
+          <section className="addressPhone">
+           <h4>5101 College Blvd, Leawood, KS 66211</h4>
+           <h4>913.888.0772 - info@imodules.com</h4>
           </section>
           </section>
           <button className="donateButton">Donate today</button>
